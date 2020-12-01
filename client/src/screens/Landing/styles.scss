@@ -1,0 +1,37 @@
+.landing {
+  padding: 1rem;
+  height: calc(100% - 132px);
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__slogan {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1rem;
+    color: #666;
+    font-family: inherit;
+    letter-spacing: 0.1rem;
+    margin-top: 6rem;
+    height: min-content;
+    text-transform: uppercase;
+  }
+  &__restricted {
+    color: #666;
+    font-family: inherit;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    height: min-content;
+    text-transform: uppercase;
+  }
+  @media (max-width: 600px) {
+    &__slogan {
+      margin-top: 1rem;
+      font-size: 90%;
+    }
+    &__restricted {
+      font-size: 90%;
+    }
+  }
+}
