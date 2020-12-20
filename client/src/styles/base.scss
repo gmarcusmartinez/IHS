@@ -4,12 +4,28 @@
   box-sizing: border-box;
 }
 html {
-  width: 100vw;
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
+
 html,
 body,
 #root {
   height: 100%;
+  --color-grey: #666;
+  --color-dark-grey: #444;
+
+  --letter-spacing-sm: 0.1rem;
+  --letter-spacing-md: 0.2rem;
+  --letter-spacing-lg: 0.4rem;
+
+  --padding-xs: 0.5rem;
+  --padding-sm: 1rem;
+  --padding-md: 2rem;
+
+  --margin-xs: 0.5rem;
+  --margin-sm: 1rem;
+  --margin-md: 2rem;
+  --margin-lg: 4rem;
 }
 #root {
   display: flex;

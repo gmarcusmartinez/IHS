@@ -1,11 +1,12 @@
 .text-input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
   &__label {
-    color: #666;
-    letter-spacing: 3px;
-    font-size: 0.9rem;
+    color: var(--color-grey);
+    letter-spacing: var(--letter-spacing-md);
+    font-size: 1.25rem;
+    text-transform: uppercase;
   }
   input {
     background-color: transparent;
@@ -13,8 +14,8 @@
     border-bottom: 0.1rem solid #bbb;
     border-radius: 0;
     color: #666;
-    height: 40px;
-    letter-spacing: 2px;
+    height: 4rem;
+    letter-spacing: 0.2rem;
     outline: none;
     &:focus {
       animation: input-focus 0.25s linear both;
@@ -22,7 +23,7 @@
   }
   .input-error {
     color: red;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     letter-spacing: var(--letter-spacing-sm);
     text-align: start;
     margin-top: var(--margin-sm);
@@ -31,11 +32,11 @@
 
 @keyframes input-focus {
   0% {
-    border-bottom: 2px solid #666;
+    border-bottom: 0.2rem solid #666;
     width: 0%;
   }
   100% {
-    border-bottom: 2px solid #666;
+    border-bottom: 0.2rem solid #666;
     width: 100%;
   }
 }

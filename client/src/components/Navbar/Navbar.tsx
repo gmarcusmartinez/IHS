@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const headers = [
   { to: "/contact", text: "contact" },
@@ -8,9 +8,14 @@ const headers = [
 
 const renderLinks = () =>
   headers.map((h) => (
-    <Link to={h.to} key={h.to} className="navbar__link">
+    <NavLink
+      to={h.to}
+      key={h.to}
+      className="navbar__link"
+      activeClassName="navbar__link__active"
+    >
       {h.text}
-    </Link>
+    </NavLink>
   ));
 const Navbar = () => {
   return (

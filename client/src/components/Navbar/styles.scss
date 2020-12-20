@@ -1,27 +1,29 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 2rem 2rem 0 2rem;
   &__header {
     align-self: flex-end;
     color: #666;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
     font-weight: 100;
+    font-size: 1.6rem;
     letter-spacing: 0.2em;
-    padding: 0 12px 12px;
+    padding: 0 1.2rem 1.2rem;
     text-transform: uppercase;
     text-decoration: none;
   }
   &__hr {
     margin-left: -10%;
     width: 120%;
-    height: 2rem;
+    height: 3.2rem;
     border: 0.3rem double #f6f6f6;
     border-width: 0.3em 0;
     background: #fff;
   }
   &__links {
     display: flex;
+    font-size: 1.6rem;
     justify-content: space-between;
     margin-left: auto;
   }
@@ -30,21 +32,28 @@
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    padding: 0.75rem;
+    font-size: 1.4rem;
+    letter-spacing: var(--letter-spacing-sm);
+    padding: 1rem;
+  }
+  &__link__active:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 0.25rem;
+    width: 100%;
+    border-bottom: 0.2rem solid #e5e5e5;
   }
 }
 
-@media (max-width: 600px) {
+@include respond(tablet) {
   .navbar {
-    margin: 1.5rem;
+    margin: 2.4rem 2.4rem 0 2.4rem;
     &__header {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
     }
     &__link {
-      font-size: 0.8rem;
-      padding: 0.75rem 0.5rem;
+      padding: 1.2rem 0.8rem 0.25rem 0.8rem;
     }
   }
 }

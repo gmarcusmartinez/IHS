@@ -5,32 +5,43 @@
 }
 .error-msg {
   color: red;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-align: start;
+  margin-bottom: 1.6rem;
 }
 .login-form {
-  margin-top: 2rem;
-  width: 340px;
-  height: 350px;
+  margin-top: 3.2rem;
+  width: 34rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
   &__btn {
+    align-items: center;
     background-color: transparent;
-    border: none;
-    color: #999;
+    border: 0.1rem solid var(--color-grey);
+    border-radius: 0.2rem;
+    color: var(--color-grey);
     cursor: pointer;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
-    letter-spacing: 2px;
+    display: flex;
+    font-family: inherit;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    letter-spacing: var(--letter-spacing-md);
+    margin-left: auto;
     outline: none;
-    text-align: start;
-    width: 100%;
-
-    transition: 0.4s ease-out;
-    &:hover {
-      color: #333;
+    text-transform: uppercase;
+    width: 10rem;
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: var(--color-dark-grey);
+    }
+    &:active {
+      transform: translateY(2px);
     }
   }
 }
@@ -39,7 +50,7 @@
   .login-form {
     width: 80%;
     &__btn {
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
   }
 }

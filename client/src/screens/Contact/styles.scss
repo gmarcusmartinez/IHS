@@ -1,0 +1,99 @@
+.contact-screen {
+  align-self: center;
+  color: var(--color-grey);
+  display: flex;
+  flex-direction: column;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+  font-size: 1.4rem;
+  letter-spacing: var(--letter-spacing-sm);
+  margin-top: var(--margin-sm);
+  padding: 0 2rem 4rem 2rem;
+  width: 100vw;
+  max-width: 60rem;
+  &__title {
+    font-size: 1.6rem;
+    letter-spacing: var(--letter-spacing-md);
+    margin: var(--margin-sm) 0;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    margin: var(--margin-sm) 0;
+  }
+  &__form {
+    width: 100%;
+    @include respond(tablet) {
+      width: 50rem;
+    }
+    &__title {
+      margin: var(--margin-sm) 0;
+      width: 100%;
+    }
+    &__textarea {
+      border: 0.1rem solid var(--color-grey);
+      border-radius: 0.6rem;
+      color: var(--color-grey);
+      font-family: inherit;
+      font-size: 1.6rem;
+      height: 14rem;
+      letter-spacing: var(--letter-spacing-sm);
+      margin-left: 2%;
+      outline: none;
+      padding: 1rem;
+      resize: none;
+      width: 96%;
+      &:focus {
+        border: 0.2rem solid #999;
+      }
+      @include respond(tablet) {
+        margin-left: unset;
+        width: 500px;
+      }
+    }
+    &__btn {
+      align-items: center;
+      background-color: transparent;
+      border: 0.1rem solid var(--color-grey);
+      border-radius: 0.2rem;
+      color: var(--color-grey);
+      cursor: pointer;
+      display: flex;
+      font-family: inherit;
+      font-size: 1.2rem;
+      justify-content: center;
+      line-height: 3.5rem;
+      height: 3.5rem;
+      letter-spacing: var(--letter-spacing-md);
+      margin-left: auto;
+      margin-right: 2%;
+      outline: none;
+      text-transform: uppercase;
+      width: 10rem;
+      &:hover,
+      &:active {
+        color: #fff;
+        background-color: var(--color-dark-grey);
+      }
+      &:active {
+        transform: translateY(2px);
+      }
+      @include respond(tablet) {
+        margin-right: unset;
+      }
+    }
+  }
+  &__phone {
+    margin: var(--margin-md) 0 var(--margin-xs) 0;
+  }
+  &__address {
+    margin: var(--margin-lg) 0 0 0;
+    &__title {
+      text-transform: uppercase;
+    }
+  }
+  &__edit {
+    margin: var(--margin-lg) 0 0 0;
+    div {
+      margin: 0.25rem 0;
+    }
+  }
+}

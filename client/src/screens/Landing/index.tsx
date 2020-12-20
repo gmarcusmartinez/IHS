@@ -1,8 +1,8 @@
 import React from "react";
 
 const Landing = () => {
-  const slogan = "Only from unconditional observation can something new arise.";
-  const restrictedMsg = "Contents are only visible to members.";
+  const slogan = "Only from unconditional observation can something new arise";
+  const restrictedMsg = "Contents are only visible to members";
 
   return (
     <div className="landing">
