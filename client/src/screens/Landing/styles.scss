@@ -1,12 +1,12 @@
 .landing {
-  padding: 1rem;
-  height: calc(100% - 132px);
-  overflow-y: hidden;
+  align-self: center;
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
-  align-items: center;
+  height: calc(100% - 120px);
+  overflow-y: hidden;
   text-align: center;
+  width: calc(100% - 20px);
 
   &__slogan {
     border-bottom: 1px solid #e5e5e5;

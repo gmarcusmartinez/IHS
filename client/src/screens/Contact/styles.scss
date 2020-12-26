@@ -5,10 +5,10 @@
   flex-direction: column;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
   font-size: 1.4rem;
+  height: 100%;
   letter-spacing: var(--letter-spacing-sm);
-  margin-top: var(--margin-sm);
-  padding: 0 2rem 4rem 2rem;
-  width: 100vw;
+  margin-top: var(--margin-md);
+  width: calc(100% - 40px);
   max-width: 60rem;
   &__title {
     font-size: 1.6rem;
@@ -24,22 +24,17 @@
     @include respond(tablet) {
       width: 50rem;
     }
-    &__title {
-      margin: var(--margin-sm) 0;
-      width: 100%;
-    }
+    &__text,
     &__textarea {
       border: 0.1rem solid var(--color-grey);
-      border-radius: 0.6rem;
+      border-radius: 0.2rem;
       color: var(--color-grey);
       font-family: inherit;
       font-size: 1.6rem;
-      height: 14rem;
       letter-spacing: var(--letter-spacing-sm);
       margin-left: 2%;
       outline: none;
-      padding: 1rem;
-      resize: none;
+      padding: 0.5rem;
       width: 96%;
       &:focus {
         border: 0.2rem solid #999;
@@ -48,6 +43,17 @@
         margin-left: unset;
         width: 500px;
       }
+    }
+    &__text {
+      margin-bottom: 0.2rem;
+    }
+    &__textarea {
+      height: 14rem;
+      resize: none;
+    }
+    &__title {
+      margin: var(--margin-sm) 0;
+      width: 100%;
     }
     &__btn {
       align-items: center;
@@ -65,6 +71,8 @@
       letter-spacing: var(--letter-spacing-md);
       margin-left: auto;
       margin-right: 2%;
+      margin-top: -0.25rem;
+
       outline: none;
       text-transform: uppercase;
       width: 10rem;
@@ -92,6 +100,7 @@
   }
   &__edit {
     margin: var(--margin-lg) 0 0 0;
+    padding-bottom: 4rem;
     div {
       margin: 0.25rem 0;
     }

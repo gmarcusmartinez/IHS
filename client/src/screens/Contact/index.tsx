@@ -8,8 +8,8 @@ const ContactScreen = () => {
 
   function sendEmail(e: any) {
     e.preventDefault();
-    const userKey = "user_5sOZq3B1nWVFeGmEs9n4g";
-    emailjs.sendForm("service_g8u8or1", "template_zsay8ss", e.target, userKey);
+    const userKey = "user_IVSYmFFAkwd8HZF4iioPX";
+    emailjs.sendForm("service_3bdpd0h", "template_04hy6sk", e.target, userKey);
     e.target.reset();
   }
 
@@ -20,7 +20,26 @@ const ContactScreen = () => {
 
       <form className="contact-screen__form" onSubmit={sendEmail}>
         <div className="contact-screen__form__title">{data.formTitle}</div>
+        <input
+          placeholder="Subject"
+          type="text"
+          className="contact-screen__form__text"
+          name="subject"
+        />
+        <input
+          placeholder="Name"
+          type="text"
+          className="contact-screen__form__text"
+          name="name"
+        />
+        <input
+          placeholder="Email"
+          type="text"
+          className="contact-screen__form__text"
+          name="email"
+        />
         <textarea
+          placeholder="Message"
           className="contact-screen__form__textarea"
           name="message"
         ></textarea>

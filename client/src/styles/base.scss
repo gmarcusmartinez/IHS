@@ -1,8 +1,11 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
@@ -10,6 +13,8 @@ html {
 html,
 body,
 #root {
+  overflow-x: hidden;
+
   height: 100%;
   --color-grey: #666;
   --color-dark-grey: #444;
@@ -27,6 +32,7 @@ body,
   --margin-md: 2rem;
   --margin-lg: 4rem;
 }
+
 #root {
   display: flex;
   flex-direction: column;
